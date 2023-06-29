@@ -29,7 +29,7 @@
         {{ end }}
     </div>
 
-    <div>
+    <div class="table_print">
         {{ range .Fields }}
             <table>
                 <tr>
@@ -48,11 +48,8 @@
                     {{ end }}
                     </tr>
                 {{ end }}
-            </table>
-            
-
-            
-            
+            </table> 
+            <input type="button" value="Печать" onclick="print_doc()" class="btn btn-success">
         {{ end }}
     </div>
     

@@ -1,0 +1,8 @@
+@media print {
+    h1, .category-wrap, .btn {
+        display: none;
+    }
+    .table_print {
+        display: block !important;
+    }
+}

@@ -9,9 +9,10 @@
       <input type="password" class="form-control" name="password" id="password">
     </div>
     <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox">
       <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
     </div>
+    <p>{{ . }}</p>
     <button type="submit" class="btn btn-primary" href="/checkpass">Войти</button>
   </form>
 {{ end }}

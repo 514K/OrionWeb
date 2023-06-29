@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>Orion web</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/web/css/print.css" media="print"/>
+    <script src="/web/js/script.js" async></script>
     <style>
         body {
             display: flex;
@@ -82,12 +84,6 @@
             flex-direction: row; 
         }
 
-        .table {
-            border: black solid 3px;
-            padding: 25px;
-            margin: 20px;
-        }
-
         table {
             width: 100%;
             font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -95,6 +91,12 @@
             border-collapse: collapse;
             text-align: center;
             border-radius: 10px;
+        }
+
+        .table {
+            border: black solid 3px;
+            padding: 25px;
+            margin: 20px;
         }
 
         th, td:first-child {
