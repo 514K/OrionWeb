@@ -3,7 +3,11 @@
     <h3>Категории</h3>
     <ul>
         {{ range .Menus }}
-        <li><a href="?id={{.Id}}">{{ .Name }}</a></li>
+            {{ if .Select}}
+            <li><a href="?id={{.Id}}" class="menu__elem__checked">{{ .Name }}</a></li>
+            {{ else }}
+            <li><a href="?id={{.Id}}">{{ .Name }}</a></li>
+            {{ end }}
         {{ end }}
 
         <!-- <li><a href="">Категория справочников 1</a></li>
@@ -14,7 +18,7 @@
 </div>
 
 <div class="right__path">
-    <h1>
+    <h1 class="user-welcome">
         Hello {{ .Username }}!
     </h1>
 
@@ -50,6 +54,7 @@
                 {{ end }}
             </table> 
             <input type="button" value="Печать" onclick="print_doc()" class="btn btn-success">
+            <input type="button" value="Тестовая печать условного документа" onclick="print_tabdoc()" class="btn btn-success">
         {{ end }}
     </div>
     

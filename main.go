@@ -12,7 +12,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-var connStr = "user=postgres password=Sudozo39! dbname=orion_1_3_0_0 sslmode=disable host=192.168.1.105"
+var connStr = "user=postgres password=Sudozo39! dbname=orion_1_3_0_0 sslmode=disable host=192.168.1.38"
 var db, err = sql.Open("postgres", connStr)
 
 // var responses = make([]*RSVP, 0, 10)

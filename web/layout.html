@@ -6,8 +6,15 @@
     <title>Orion web</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/web/css/print.css" media="print"/>
+    <link rel="stylesheet" type="text/css" href="/web/css/menu.css"/>
     <script src="/web/js/script.js" async></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/pdfmake.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/vfs_fonts.js"></script>
     <style>
+        .user-welcome {
+            text-align: right;
+        }
+
         body {
             display: flex;
             flex-direction: row;
@@ -82,6 +89,7 @@
         .right__path__tables {
             display: flex;
             flex-direction: row; 
+            flex-wrap: wrap;
         }
 
         table {
@@ -97,6 +105,7 @@
             border: black solid 3px;
             padding: 25px;
             margin: 20px;
+            width: 30%;
         }
 
         th, td:first-child {
